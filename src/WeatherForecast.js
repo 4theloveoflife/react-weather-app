@@ -12,12 +12,12 @@ export default function WeatherForecast(props){
         setloaded(true);
     }
 
-    if(loaded){
+    if (loaded) {
 return(
     <div className="WeatherForecast">
         <div className="row">
-            {forecast.map(function (dailyForecast,index){
-                if (index<5){
+            {forecast.map(function  (dailyForecast,index) {
+                if (index< 5) {
                 return(
                        <div className="col" key={index}>
                 <WeatherForecastDay data={dailyForecast} />
@@ -30,7 +30,6 @@ return(
     );
    
 }else{
-
     let apiKey="b1ad2579aaffa4376d245595812d15f0";
     let longitude=props.coordineates.lon;
     let latitude=props.coordinates.lat;
