@@ -33,8 +33,9 @@ return(
     let apiKey="b1ad2579aaffa4376d245595812d15f0";
     let longitude=props.coordineates.lon;
     let latitude=props.coordinates.lat;
-    let apiUrl='https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric';
+    let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+    
 return null;
 }
 }
