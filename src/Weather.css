@@ -4,6 +4,7 @@
     padding: 16px;
     border-radius:4px;
    background-color: #1a3255;
+   color:aqua
 }
 
 .Weather h1{
@@ -24,6 +25,7 @@
     font-weight: 100;
     line-height: 19px;
     list-style: none;
+    color:aqua
 }
 
 .Weather .temperature{
